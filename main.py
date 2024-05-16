@@ -133,5 +133,44 @@
 #      def cool_food(self):
 #          print('Еда охлаждена')
 
-# Прицип инверсии зависимостей DIP
+# Принцип инверсии зависимостей DIP
 
+# class Book():
+#     def read(self):
+#         print('Читение интерсной книги')
+#
+# class StoryReader():
+#     def __init__(self):
+#         self.book = Book()
+#
+#     def tell_story(self):
+#         self.book.read() # Зависимость Book от StoryReader
+
+# from abc import ABC, abstractmethod
+#
+# class StoreSourse(ABC):
+#     @abstractmethod
+#     def get_story(self):
+#         pass
+#
+# class Book(StoreSourse):
+#     def get_story(self):
+#         print('Читение интерсной книги')
+# class AudioBook(StoreSourse):
+#     def get_story(self):
+#         print('Читение интерсной книги вслух')
+#
+# class StoryReader():
+#     def __init__(self, store_sourse: StoreSourse):
+#         self.store_sourse = store_sourse
+#     def tell_story(self):
+#         self.store_sourse.get_story()
+#
+# book = Book()
+# audiobook = AudioBook()
+#
+# reader_book = StoryReader(book)
+# reader_audiobook = StoryReader(audiobook)
+#
+# reader_book.tell_story()
+# reader_audiobook.tell_story()
