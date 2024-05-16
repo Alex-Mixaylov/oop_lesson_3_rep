@@ -74,3 +74,36 @@
 # report = Report('заголовок отчета', 'это текст отчета его тут много', HTMLFormated())
 #
 # report.docPrinter()
+
+# Принцип подстановки Барбары Лисков LSP
+
+# class Birds():
+#     def __init__(self, name):
+#         self.name = name
+#     def fly(self):
+#         print('Птица летает')
+#
+# class Pinguin(Birds):
+#     pass
+#
+# p = Pinguin('Пингвин')
+# p.fly()
+
+# class Bird():
+#     def fly(self):
+#         print('Эта птица летает')
+#
+# class Duck(Bird):
+#     def fly(self):
+#         print('Эта утка летает быстро')
+#
+# def fly_in_the_sky(animal):
+#     animal.fly()
+#
+# b = Bird()
+# d = Duck()
+# fly_in_the_sky(b)
+# fly_in_the_sky(d)
+
+# Принцип разделения интерфейсов ISP
+
