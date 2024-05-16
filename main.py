@@ -107,3 +107,31 @@
 
 # Принцип разделения интерфейсов ISP
 
+# class SmartHouse():
+#     def turn_on_tv(self):
+#         print('Телевизор включен')
+#     def turn_on_light(self):
+#         print('Свет включен')
+#     def heat_food(self):
+#         print('Еда подогрета')
+
+# class Light():
+#      def turn_on_light(self):
+#          print('Свет включен')
+#      def turn_off_light(self):
+#          print('Свет выключен')
+#
+# class TV():
+#      def turn_on_tv(self):
+#          print('Телевизор включен')
+#      def turn_off_tv(self):
+#          print('Телевизор выключен')
+#
+# class Food():
+#      def heat_food(self):
+#          print('Еда подогрета')
+#      def cool_food(self):
+#          print('Еда охлаждена')
+
+# Прицип инверсии зависимостей DIP
+
